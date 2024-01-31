@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Fredoka:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+       overflow: hidden;
+       background: #8cc461;
+  font-family: "Roboto", sans-serif;
+
+    }
+  .winner{
+    height: 100vh;
+    width: 100vw;
+  }
+
+    .winner>img{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    button{
+        position: absolute;
+        background: none;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 0.6rem;
+  color: white;
+  padding: 0.6rem 2.5rem;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+    }
+.play-again {
+    top: 85%;
+  left: 45%;
+}
+
+.rule-btn {
+    top: 90%;
+    left: 88%;
+}
+
+a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.rules {
+  border-radius: 13px;
+border: 7px solid #FFF;
+background: #004429;
+color: white;
+height: 22rem;
+width: 25rem;
+padding: 1.3rem;
+}
+
+.rule_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+}
+li{
+  padding: 10px;
+  align-items: center;
+  list-style: none;
+}
+
+.li {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.li_img {
+  height: 5px;
+  width: 5px;
+}
+
+.rules_box {
+  position: absolute;
+   top: 50%;
+   left: 60%;
+   height: 27rem;
+   width: 28rem;
+   display: flex; align-items: center;
+   justify-content: center;
+   opacity: 0;
+}
+
+.back {
+  margin: 2px;
+  position: absolute;
+  top: 2%;
+  left: 85%;
+  cursor: pointer;
+}
+
+.back_text{
+  margin: 2px;
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  color: #FFF;
+}
+
+
+</style>
+
+<body>
+    <button class="rule-btn">Rules</button>
+    <button class="play-again"><a href="index.html">Play Again</a></button>
+    <div class="winner">
+        <img src='assets/29-01-2024 04_52_35 PM.png' alt="">
+    </div>
+    <div class="rules_box">
+        <div class="back">
+          <img src="assets/Ellipse 6.png" alt="" >
+          <h1 class="back_text">X</h1>
+        </div>
+  
+        <div class="rules">
+          
+          <div class="rule_title">
+            <h2>Game Rules</h2>
+          </div>
+          <div class="des">
+              <div class="li">
+                <img class="li_img" src="assets/Rectangle 5.png" alt="">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+              </div>
+              <div class="li">
+                <img class="li_img" src="assets/Rectangle 5.png" alt="">
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+              </div>
+              <div class="li">
+                <img class="li_img" src="assets/Rectangle 5.png" alt="">
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+              </div>
+              <div class="li">
+                <img class="li_img" src="assets/Rectangle 5.png" alt="">
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+              </div>
+          </div>
+         </div>
+  
+       </div>
+</body>
+<script>
+    btnRules.addEventListener("click", () => {
+  modalRules.style.opacity='1';
+});
+btnClose.addEventListener("click", () => {
+  modalRules.style.opacity='0';
+});
+</script>
+</html>
